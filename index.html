@@ -1,22 +1,4 @@
-<?php
-
-
-if($_POST["message"]) {
-    $recipient="Denvernoell@gmail.com";
-    $subject="VBAMadeEasy comment or question";
-    $sender=$_POST["sender"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
-	}
-
-
-
-
-?><!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
@@ -223,12 +205,12 @@ This is by no means all of the code that you will ever need but it is the code t
 								
 								
 								
-								<form action=”mailto:Denvernoell@gmail.com”
+								<!-- <form action=”mailto:Denvernoell@gmail.com”
 								      method="POST" 
 								      enctype="multipart/form-data"
 								      name ="EmailForm">
 								      Name:<br>
-									
+									-->
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
