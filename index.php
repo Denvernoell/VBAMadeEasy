@@ -2,19 +2,21 @@
 
 
 if($_POST["message"]) {
+    $recipient="Denvernoell@gmail.com";
+    $subject="VBAMadeEasy comment or question";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+	}
 
 
-mail("denvernoell@gmail.com", "VBA Made Easy comment or question",
 
 
-$_POST["insert your message here"]. "From: an@email.address");
-
-
-}
-
-
-?>
-<!DOCTYPE HTML>
+?><!DOCTYPE HTML>
 <!--
 	Phantom by HTML5 UP
 	html5up.net | @ajlkn
