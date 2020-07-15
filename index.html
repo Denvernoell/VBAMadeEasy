@@ -1,3 +1,19 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("denvernoell@gmail.com", "VBA Made Easy comment or question",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
 <!DOCTYPE HTML>
 <!--
 	Phantom by HTML5 UP
@@ -200,7 +216,17 @@ This is by no means all of the code that you will ever need but it is the code t
 						<div class="inner">
 							<section>
 								<h2>Get in touch</h2>
-								<form method="post" action="#">
+								
+
+								
+								
+								
+								<form action=”mailto:Denvernoell@gmail.com”
+								      method="POST" 
+								      enctype="multipart/form-data"
+								      name ="EmailForm">
+								      Name:<br>
+									
 									<div class="fields">
 										<div class="field half">
 											<input type="text" name="name" id="name" placeholder="Name" />
@@ -213,7 +239,7 @@ This is by no means all of the code that you will ever need but it is the code t
 										</div>
 									</div>
 									<ul class="actions">
-									<li><a href = "mailto: denvernoell@gmail.com"><input type="submit" value="Send" class="primary" /></a></li>
+									<li><input type="submit" value="Send" class="primary" /></a></li>
 										<!-- <li><a href = "mailto: denvernoell@gmail.com">Send</a></li> -->
 									</ul>
 								</form>
@@ -229,6 +255,8 @@ This is by no means all of the code that you will ever need but it is the code t
 							<ul class="copyright">
 								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP. Modified by Denver Noell</a></li><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 							</ul>
+				
+	
 						</div>
 					</footer>
 
