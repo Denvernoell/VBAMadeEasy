@@ -51,27 +51,39 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Movement</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+							
+							
+							<div class="row gtr-uniform">
+
+							<div class="col-4"><span class="image fit"><img src="images/web-management.svg" alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/web-management.svg" alt="" /></span></div>
+							<div class="col-4"><span class="image fit"><img src="images/web-management.svg" alt="" /></span></div>
+							<p>If you've never heard of VBA before or if you've never used it on your current instalation of an office product, this will show you how to get started.</p>
+             					</div>
+							
+							
+							
+							
 							<p>Some of the most common code used within procedures</p>
               
               <h2>Cell references</h2>
                 <h3>Absolute</h3>
-                  <code>Range("A1:C3").select</code>
+							<code>Range("A1:C3").select</code></br>
                 <h3>Relative</h3>
-                  <code>Range("R1C1:R3C3").select
+						<code>Range("R1C1:R3C3").select</code></br>
                 <h3>Cell number</h3>
-                  <code>Range(Cells(1,1):Cells(3,3)).select</code>
+                  <code>Range(Cells(1,1):Cells(3,3)).select</code></br>
               <h2>Movement</h2>
                 <h3>Offset</h3>               
-                  <code>activecell.offset(1,0).select</code>
+                  <code>activecell.offset(1,0).select</code></br>
               <h2>Selection</h2>
                 <h3>To end</h3>
-                  <code>Range(ActiveCell, ActiveCell.End(xlDown)).Select</code>
+                  <code>Range(ActiveCell, ActiveCell.End(xlDown)).Select</code></br>
                 <h3>Increase</h3>
-                  <code>Selection.Resize(Selection.Rows.Count, Selection.Columns.Count + 1).Select</code>
+                  <code>Selection.Resize(Selection.Rows.Count, Selection.Columns.Count + 1).Select</code></br>
               <h2>Fill</h2>
                     <h3>Grab</h3>
-                      <code>Selection.FillRight</code>
+                      <code>Selection.FillRight</code></br>
               
               
 							<p></p>
